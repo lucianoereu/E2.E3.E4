@@ -1,0 +1,122 @@
+:root{
+    /* bgColor */
+--background: rgb(0, 0, 0);
+
+/* color letra */
+
+--black : black;
+--white : white;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 90%;
+}
+
+.navBar,
+.navBarList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar{
+    gap: 150px;
+}
+
+.navBarList{
+    gap: 30px;
+}
+
+.navBarList a{
+    color: var(--black)
+}
+.navBarList li:first-child{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.cart-icon{
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    margin-top: 3px;
+    border-radius: 10px;
+    font-weight: 500;
+    height: 50px;
+    cursor: pointer;
+}
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+/* hero */
+#hero {
+    margin-top: 60px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1{
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+}
+.hero-info p{
+    font-size: 14px;
+    width: 70%;
+}
+
+.hero-info a{
+    background: cornflowerblue;
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card{
+    width: 300px;
+    background: cornflowerblue;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px
+    ;
+}
+
