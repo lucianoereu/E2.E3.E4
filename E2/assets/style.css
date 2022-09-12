@@ -1,6 +1,8 @@
 :root{
     /* bgColor */
---background: rgb(0, 0, 0);
+--background: #4158D0;
+--background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+;
 
 /* color letra */
 
@@ -16,6 +18,10 @@
     text-decoration: none;
     list-style-type: none;
 }
+body{
+    background-image: url(https://static.wixstatic.com/media/691526_0964e10b9c1343d1a1592104abed1c8a~mv2_d_3600_3600_s_4_2.jpg/v1/fill/w_1800,h_669,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/691526_0964e10b9c1343d1a1592104abed1c8a~mv2_d_3600_3600_s_4_2.jpg);
+    background-size: cover;
+}
 /* header */
 header{
     width: 100%;
@@ -29,7 +35,8 @@ header{
 }
 
 .logo {
-    height: 90%;
+    height: 140%;
+    margin-top: 40px;
 }
 
 .navBar,
@@ -48,7 +55,8 @@ header{
 }
 
 .navBarList a{
-    color: var(--black)
+    color: var(--black);
+    
 }
 .navBarList li:first-child{
     color: var(--white);
