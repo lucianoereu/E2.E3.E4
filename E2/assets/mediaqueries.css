@@ -1,36 +1,72 @@
 @media (max-width: 992px){
+ 
+  
     .navBar {
         gap: 10px;
       }
     
-      .navBarList {
+      .navBar{
         position: absolute;
-        top: 65px;
-        left: 5%;
-        right: 5%;
-        width: 90%;
-        flex-direction: column;
+        top: 75px;
+        width: 100%;
         background: var(--nav-bg);
-        border: 2px solid var(--electric);
-        border-top: 0px;
         border-radius: 0px 0px 15px 15px;
         align-items: flex-start;
-        padding: 45px 30px;
         gap: 25px;
         z-index: 2;
         display: none;
+        left: 0px;
       }
-    
+      .menu-label {
+        display: flex;
+        cursor: pointer;
+        order: 2;
+      }
+      .navBarList{
+        display: flex;
+        flex-direction: column;
+      }
       .navBarList a {
         font-size: 18px;
+        color:#F34213;
       }
+      .navBarList a:hover{
+        color:whitesmoke;
+      }
+  #menu-toggle{
+    display: none;
+  }
+  #menu-toggle:checked + .navBar {
+    display: flex;
+  }
+
+  /* hero */
+  #hero{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
       .hero-info {
-        width: 100%;
+        width: 90%;
         text-align: center;
         justify-content: center;
         align-items: center;
         gap: 30px;
+        
       }
+   .profes-info{
+  margin-left: 10px;
+   text-align: center;
+   }
+    .profes-info img{
+      display: none;
+    }
+
+    
+    footer{
+      width: 100%;
+    }
     
 }
 
@@ -46,7 +82,7 @@
       flex-wrap: wrap;
     }
 #hero{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -62,29 +98,51 @@
         background-color: var(--nav-bg);
     }
   .hero-img{
-    width: 80%;
+    width: 100%;
   }
-  
-  
+  .hero-img h3{
+    width: 100%;
+    font-size: small;
+   
+  }
     .info-card {
-      width: 100%;
-      height: 350px;
+      width: 80%;
+      height: 450px;
       justify-content: center;
     }
   
     .info-card p {
-      width: 90%;
+     font-size: 15px;
     }
-  
-
-  
-   
-  
-    .footer-links {
-      flex-direction: column;
-      text-align: center;
-    }
-
+.profes-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+    
+}
+#profes{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.profes-info{
+  width: 100%;
+}
+ .profes-info h2{
+  font-size:x-large;
+ }
+ .profes-info img{
+  display: none;
+ }
+ .profes-cards{
+  display: flex;
+  flex-direction: column;
+ }
+ .profes-cards img{
+  width: 60%;
+ }
+ /* flayers */
 #flayers{
     max-width: 100%;
 }
@@ -96,5 +154,13 @@
     display: flex;
     flex-direction: column;
 }
+.flayers-cards img{
+  width: 80%;
+}
+.footer-links {
+  display: flex;
+  text-align: center;
+}
+
 
     }
