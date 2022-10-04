@@ -101,11 +101,12 @@ header nav ul a:hover {
 
 .cart-icon{
     border: 1px solid var(--brown);
-    padding: 5px 15px;
+    padding: 15px;
     margin-top: 3px;
     border-radius: 20px;
-    height: 40px;
+    font-size: 25px;
     cursor: pointer;
+    color: var(--bg-white);
 }
 .cart-icon:hover{
     -webkit-transform: scale(1.1);
